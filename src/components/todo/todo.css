@@ -1,0 +1,51 @@
+.todo-main {
+    display: flex;
+}
+
+.todoFilter-container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: inset 0px 5px 5px #282c3438;
+    padding: 12px;
+    text-align: center;
+}
+
+.todoFilter-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 32px;
+}
+
+.todoFilter-container ul li {
+    cursor: pointer;
+}
+
+.todoFilter-container li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.todoFilter-container .active {
+    color: black;
+}
+
+.todoActionButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.task-col {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
