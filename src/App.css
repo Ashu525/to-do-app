@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+.text-white {
+  color: white;
+}
+
+.h-100 {
+  height: 100%;
 }
 
 .App-logo {
@@ -32,7 +36,90 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    width: 70%;
+  }
+}
+
+
+
+
+/* demo */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #7e40f6;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right,
+      rgba(126, 64, 246, 1),
+      rgba(80, 139, 252, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right,
+      rgba(126, 64, 246, 1),
+      rgba(80, 139, 252, 1));
+}
+
+.mask-custom {
+  background: rgba(24, 24, 16, 0.2);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  padding: 1.5rem;
+}
+
+.btn-primary-custom {
+  background-color: #508bfd
+}
+
+.btn-success-custom {
+  background-color: rgba(20, 164, 77);
+}
+
+.btn-danger-custom {
+  background-color: rgba(220, 76, 100);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  outline: none;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.my-40 {
+  margin: 40px auto;
+}
+
+.my-20 {
+  margin: 20px auto;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.m-auto {
+  margin: auto;
 }
